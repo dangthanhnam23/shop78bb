@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="/css/cssadmin.css">
+<div class="span9">
+    <ul class="breadcrumb">
+		<li><a>Trang Chủ</a> <span class="divider">/</span></li>
+		<li class="active">Bán Hàng</li>
+    </ul>
+    </div>
+   <label class="control-label" for="multiSelect">Chọn Chức Năng </label>
+   <div class="controls">
+     <form action="functionsell" method="POST">
+              <div class="controls">
+              <select class="span9" id="select11" name="function">
+                   <option>Danh Sách Chớ Duyệt</option>
+                <option class="pushproduct">Đăng Tạo Sản phẩm</option>
+                <option>Hàng khách Chớ Duyệt</option>
+                <option>Danh sách Chưa Giao</option>
+                <option>Danh sách đã giao</option>
+                <option>Danh Sách Sản Phẩm</option>
+              </select>
+            </div>
+           <input type="submit" value="OKey">
+            </form>
+</div>
+<span class="label label-inverse">Danh Sách Chớ Duyệt</span>
+<div id="div1">
+<div class="span6">
+		<table class="table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Tên Sản Phẩm </th>
+            <th>Số Lượng Bán </th>
+            <th>Giá</th>
+          </tr>
+        </thead>
+         {{#each array}}
+    <tbody>
+          <tr>
+            <td>1</td>
+            <td>{{this.nameproduct}}</td>
+            <td>{{this.amountproduct}}</td>
+            <td>{{this.nameproduct}}</td>
+          </tr>
+          <tr>
+           <td>Đánh Giá : </td>
+            <td>Like </td>
+            <td>Cmt</td>
+            <td>Đến Trạng Đó </td>
+          </tr>
+          <tr>
+           <td>Tính Trạng : Đang Chớ ADMIN duyệt </td>
+           <td>Tiền Thuế  </td> 
+             <td>Kho Còn lại</td> 
+             <td><input type="button" value="Xóa">
+   <input type="button" value="Sữa"></td>
+          </tr>
+        </tbody>
+  {{/each}}
+        <tbody>
+          <tr>
+            <td>1 </td>
+            <td>Like </td>
+            <td>Cmt</td>
+            <td>Đến Trạng Đó</td>
+          </tr>
+          <tr>
+           <td>Đánh Giá : </td>
+            <td>Like </td>
+            <td>Cmt</td>
+            <td>Đến Trạng Đó </td>
+          </tr>
+          <tr>
+           <td>Tính Trạng : </td>
+           <td>Tiền Thuế  </td> 
+             <td>Kho Còn lại</td> 
+           <td>
+              <input type="button" value="Xóa">
+   <input type="button" value="Sữa">
+           </td>
+          </tr>
+          
+        </tbody>
+      </table>
+	</div>
+    </div>
+    <script>
+    </script>

@@ -1,0 +1,85 @@
+<link rel="stylesheet" href="/css/cssadmin.css">
+<div class="span9">
+    <ul class="breadcrumb">
+		<li><a>Trang Chủ</a> <span class="divider">/</span></li>
+		<li class="active">ADMIN</li>
+    </ul>
+    </div>
+   <label class="control-label" for="multiSelect">Chọn Chức Năng </label>
+   <div class="controls">
+              <div class="controls">
+              <select class="span9" id="select11">
+                 <option>Duyệt Sản Phẩm</option>  
+                <option>Quản Lí KHo Nick Username</option>
+                 <option>Tố Cáo</option>
+              </select>
+            </div>
+</div>
+<div class="span6">
+		<table class="table">
+        <thead>
+          <tr>
+            <th>Xuất Hàng </th>
+            <th>Người Đăng </th>
+            <th>Sản Phẩm</th>
+            <th>Giá</th>
+          </tr>
+        </thead>
+          {{#each logins}}
+   <tbody id="{{this.url}}">
+          <tr>
+            <td>hàng Sông HÌnh </td>
+            <td>{{array.nameproduct}}</td>
+            <td>{{this.priceproduct}}</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>Đia chị : </td>
+            <td>Số lượng :</td>
+            <td>Số điện thoại :</td>
+            <td><span class="label-info"><input class="yes" type="button" name="ID" id="{{this._id}}" value="v"><span class="label-important">
+
+  <input type="button" name="" id="{{this._id}}" value="x" class="no"></span></td></span>
+          </tr>
+        </tbody>
+  {{/each}}
+        <tbody>
+          <tr>
+            <td>hàng Sông HÌnh </td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <td>Đia chị : </td>
+            <td>Số lượng :</td>
+            <td>Số điện thoại :</td>
+            <td><span class="label-info"><input type="submit" name="" id="" value="v"><span class="label-important">
+
+  <input type="button" name="" id="" value="x"></span></td></span>
+          </tr>
+        </tbody>
+      </table>
+	</div>
+  <form action="/browseproducts-us" method="Post" class="submits">
+<input type="text" value="" class="browseproducts-us" name="id">
+  </form>
+  <script>
+    let yes = document.getElementsByClassName("yes");
+    for (i = 0 ; i < yes.length ; i++){
+      yes[i].onclick = function() {
+        var x =  this.getAttribute("id");
+           document.querySelector(".browseproducts-us").setAttribute("value" , x )
+           document.querySelector(".submits").submit();
+      }
+    }
+    let no = document.getElementsByClassName("no");
+    for (i = 0 ; i < yes.length ; i++){
+      no[i].onclick = function() {
+        var x =  this.getAttribute("id");
+           document.querySelector(".browseproducts-us").setAttribute("value" , x )
+             document.querySelector(".submits").setAttribute("action" , "/deteleproducts-us" );
+           document.querySelector(".submits").submit();
+      }
+    }
+  </script>

@@ -1,0 +1,14 @@
+.well ul li {
+    display: flex;
+}
+.avtar {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid black
+    ;
+}
+.Username {
+    margin-left: 1px;
+    font-weight: 600;
+}

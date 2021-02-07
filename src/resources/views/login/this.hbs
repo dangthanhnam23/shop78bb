@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kho Hàng Của Bạn</title>
+</head>
+<body>
+    <div class="bar-breadcrumb">
+        <ul class="breadcrumb">
+        <li><a href="#">Home</a> <span class="divider">/</span></li>
+        <li><a href="#">product</a> <span class="divider">/</span></li>
+        <li class="active">Kho Tài Khoản</li>
+      </ul>
+    </div>
+    <div class="sanphamluu">
+         {{#each logins}}
+        <div class="thumbnail">
+			<img src="themes/images/products/panasonic.jpg" alt="Hình ảnh avatar">
+			<div class="caption">
+			  <h5> Username : {{this.Username}}</h5>
+              <h5> Password : {{this.Password}}</h5>
+               <h5> ID : {{this.idusername}}</h5>
+				<h4 style="text-align:center"><a class="btn" href="product_details.html"> Xóa<i class="icon-zoom-in"></i></a>  <a class="btn btn-primary" href="#">Xem chi tiết</a></h4>
+			</div>
+		  </div>
+           {{/each}}
+    </div>
+</body>
+</html>

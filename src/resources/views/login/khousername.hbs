@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/khousername.css">
+
+
+</head>
+<body>
+    <div class="row-fluid">
+		<div class="span4">
+		<table class="table table-bordered">
+        <thead>
+          <tr class="thumbnail">
+            <th>Username</th>
+  <th>Password</th>
+          </tr>
+        </thead>
+        <tbody class="allusernamemenber">
+         {{#each logins}}
+    <tr class="usernamemenber thumbnail">
+            <td class=""> Username:
+              {{this.Username}}</td>
+            <td class=""> Password : {{this.Password}} <span class="label label-info method"></span></td>
+          </tr>
+  {{/each}}
+  <div class="bar">
+
+ <a href="/login/creactmenber" class="btn btn btn-primary">Thêm </a>
+ <button class="btn btn-danger">xóa</button>
+ <a href="#" class="btn btn btn-primary">Sửa </a>
+<div class="btn-group">
+          <button class="btn">Action</button>
+          <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </div>
+  </div>
+<span class="label label-info">Kho tài Khoản</span>
+        </tbody>
+      </table>
+		</div>
+		</div>
+	</div>
+          <span class="label label-info">Kho Sản Phẩm</span>
+          <div class="thumbnail">
+            <div class="avatarproduct">
+              <p>Avatar 30%</p>
+            </div>
+            <div class="contentproduct">
+              <li><a>Tên Sản Phẩm : xxxxx</a></li>
+               <li><a>Giá Sản phẩm : xxxxx</a></li>
+                <li><a>Số Điện thoại : xxxxx</a></li>
+                <li><a>đia chí : xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</a></li>
+                 <li><a>Tên Người Đặt hàng : xxxxxxxxxxxxxxx</a></li>
+            </div>
+          </div>
+        
+  <link rel="stylesheet" href="/css/nobase.css">
+</body>
+</html>

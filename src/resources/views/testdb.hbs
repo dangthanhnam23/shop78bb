@@ -1,0 +1,12 @@
+ {{#each logins}}
+<div class="container">
+  <h2>Username: {{this.Username}}</h2>
+  <p> Password: {{this.Password}}</p>
+  <p> id:{{this.keys.Name}}</p>
+  <div class="card" style="width:400px">
+    <div class="card-body">
+      <h4 class="card-title"> Rank:  {{this.Rank}}</h4>
+    </div>
+  </div>
+</div>
+ {{/each}}

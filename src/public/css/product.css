@@ -1,0 +1,23 @@
+.text-center {
+    text-align: center;
+}
+.thumbnail a  img {
+    height: 300px;
+    width: 100%;
+}
+.text-center h5 {
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}   
+#iconshop {
+    height: 30px;
+    width: 30px;
+}
+.allproduct {
+    display: flex;
+    flex-flow: wrap-reverse;
+}
+a.btn {
+    font-size: 12px;
+}

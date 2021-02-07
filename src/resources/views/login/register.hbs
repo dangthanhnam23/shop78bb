@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="javascpit/hello.js">
+</script>
+<body>
+<!-- Navbar ================================================== -->
+<div class="span9">
+    <ul class="breadcrumb">
+		<li><a>Trang Chủ</a> <span class="divider">/</span></li>
+		<li class="active">Đăng ký</li>
+    </ul>
+	<h3> Đăng Ký</h3>	
+	<div class="well">
+
+	<!--
+	<div class="alert alert-info fade in">
+		<button type="button" class="close" data-dismiss="alert">×</button>
+		<strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+	 </div>
+	<div class="alert fade in">
+		<button type="button" class="close" data-dismiss="alert">×</button>
+		<strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+	 </div>
+	 <div class="alert alert-block alert-error fade in">
+		<button type="button" class="close" data-dismiss="alert">×</button>
+		<strong>Lorem Ipsum is simply</strong> dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+	 </div> -->
+	<form class="form-horizontal"  method="POST" action="/ondangky">
+		<h4>Chọn Giới Tính</h4>
+		<div class="control-group">
+		<label class="control-label">Title</label>
+		<div class="controls">
+		<select class="span1" name="gioitinh">
+			<option value="">-</option>
+			<option value="girl">Gái</option>
+			<option value="boy">Trai</option>
+		</select>
+		</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputFname1">Họ<sup>*</sup></label>
+			<div class="controls">
+			  <input type="text" id="inputFname1" placeholder="FirstName" name="FirstName">
+			</div>
+		 </div>
+		 <div class="control-group">
+			<label class="control-label" for="inputLnam">Tên<sup>*</sup></label>
+			<div class="controls">
+			  <input type="text" id="inputLnam" placeholder="Last Name" name="LastName">
+			</div>
+		 </div>
+         <div class="control-group">
+			<label class="control-label" for="inputLnam">Username <sup>*</sup></label>
+			<div class="controls">
+			  <input type="text" id="inputLnam" placeholder="Username" name="Username" class="username">
+			</div>
+		 </div>
+		<div class="control-group">
+		<label class="control-label" for="input_email">Email <sup>*</sup></label>
+		<div class="controls">
+		  <input type="text" id="input_email" placeholder="Email" name="Email">
+		</div>
+	  </div>	  
+	<div class="control-group">
+		<label class="control-label" for="inputPassword1">Password <sup>*</sup></label>
+		<div class="controls">
+		  <input type="password" id="inputPassword1" placeholder="Password" name="Password">
+		</div>
+	  </div>	  
+      <div class="control-group">
+		<label class="control-label" for="inputPassword1">Số điện thoại<sup>*</sup></label>
+		<div class="controls">
+		  <input type="text" id="inputPassword1" placeholder="Số điện thoại" name="phonenumber">
+		</div>
+	  </div>	 
+       <div class="control-group">
+		<label class="control-label" for="inputPassword1">Địa Chị<sup>*</sup></label>
+		<div class="controls">
+		  <input type="text" id="inputPassword1" placeholder="Địa Chị" name="address">
+		</div>
+	  </div> 
+		<div class="control-group">
+		<label class="control-label">Date of Birth <sup>*</sup></label>
+		<div class="controls">
+		  <select class="span1" name="datebirthday" class="ngaysinh" id="Ngaysinh">
+				<option value="">-</option>
+					
+			</select>
+			<select class="span2" name="datebirthmonth" id="thangsinh">
+				<option value="">-</option>
+					
+			</select>
+			<select class="span3" name="datebirthyear" id="namsinh">
+				<option value="">-</option>
+					
+			</select>
+		</div>
+	  </div>
+	<div class="control-group">
+			<div class="controls">
+				<input type="hidden" name="email_create" value="1">
+				<input type="hidden" name="is_new_customer" value="1">
+				<input class="btn btn-large btn-success" type="submit" value="Register" />
+			</div>
+		</div>		
+        <div class="control-group">
+	</form>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<a href="/login">đăng nhập tại đây</a>
+<!-- Footer ================================================================== -->
+	<div  id="footerSection">
+	<div class="container">
+		<div class="row">
+			<div class="span3">
+				<h5>ACCOUNT</h5>
+				<a href="login.html">YOUR ACCOUNT</a>
+				<a href="login.html">PERSONAL INFORMATION</a> 
+				<a href="login.html">ADDRESSES</a> 
+				<a href="login.html">DISCOUNT</a>  
+				<a href="login.html">ORDER HISTORY</a>
+			 </div>
+			<div class="span3">
+				<h5>INFORMATION</h5>
+				<a href="contact.html">CONTACT</a>  
+				<a href="register.html">REGISTRATION</a>  
+				<a href="legal_notice.html">LEGAL NOTICE</a>  
+				<a href="tac.html">TERMS AND CONDITIONS</a> 
+				<a href="faq.html">FAQ</a>
+			 </div>
+			<div class="span3">
+				<h5>OUR OFFERS</h5>
+				<a href="#">NEW PRODUCTS</a> 
+				<a href="#">TOP SELLERS</a>  
+				<a href="special_offer.html">SPECIAL OFFERS</a>  
+				<a href="#">MANUFACTURERS</a> 
+				<a href="#">SUPPLIERS</a> 
+			 </div>
+			<div id="socialMedia" class="span3 pull-right">
+				<h5>SOCIAL MEDIA </h5>
+				<a href="#"><img width="60" height="60" src="/images/facebook.png" title="facebook" alt="facebook"/></a>
+				<a href="#"><img width="60" height="60" src="/images/twitter.png" title="twitter" alt="twitter"/></a>
+				<a href="#"><img width="60" height="60" src="/images/youtube.png" title="youtube" alt="youtube"/></a>
+			 </div> 
+		 </div>
+		<p class="pull-right">&copy; Bootshop</p>
+	</div><!-- Container End -->
+	</div>
+<!-- Placed at the end of the document so the pages load faster ============================================= -->
+	<script src="/js/jquery.js" type="text/javascript"></script>
+	<script src="/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="/js/google-code-prettify/prettify.js"></script>
+	
+	<script src="/js/bootshop.js"></script>
+    <script src="/js/jquery.lightbox-0.5.js"></script>
+	<script src="/js/onclickregister.js">
+
+	</script>
+	
+	<!-- Themes switcher section ============================================================================================= -->
+</body>
+</html>

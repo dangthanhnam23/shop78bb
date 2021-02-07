@@ -1,0 +1,16 @@
+const express = require('express')
+const router = express.Router()
+const logincotrollers = require('../app/controllers/logincotrollers');
+const multer  = require('multer')
+const upload = multer({ dest: './public/uploads' })
+const checkdb = require('../app/controllers/models/checkdb/checklogins')
+router.get('/' , logincotrollers.login)
+router.get('/dangky' , logincotrollers.index)
+router.get('/admin' , logincotrollers.admin)
+router.get('/khousername' , logincotrollers.khousername)
+router.get('/creactmenber' , logincotrollers.creactmenber)
+router.get('/upavatar' , upload.single('avatar') , logincotrollers.upavatar)
+router.get('/sell' , upload.single('avatar') , logincotrollers.sell)
+router.post('/upavatar' , upload.single('avatar') , logincotrollers.upavatar)
+router.get('/admin/ProductManagement' , logincotrollers.ProductManagement)
+module.exports = router;

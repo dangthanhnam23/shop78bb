@@ -1,0 +1,99 @@
+<script>
+    
+</script>
+<style>
+.dispalyflex {
+      display: flex;
+    flex-flow: wrap-reverse;
+}
+</style>
+<link rel="stylesheet" href="/css/cssadmin.css">
+<div class="span9">
+    <ul class="breadcrumb">
+		<li><a>Trang Chủ</a> <span class="divider">/</span></li>
+		<li class="active">Bán Hàng</li><span class="divider">/</span>
+        <li class="active">Khách Hàng Đang chớ</li>
+    </ul>
+    </div>
+   <label class="control-label" for="multiSelect">Chọn Chức Năng </label>
+   <div class="controls">
+     <form action="functionsell" method="POST">
+              <div class="controls">
+              <select class="span9" id="select11" name="function">
+                  <option>Danh Sách Chớ Duyệt</option>
+                <option class="pushproduct">Đăng Tạo Sản phẩm</option>
+                <option>Hàng khách Chớ Duyệt</option>
+                <option>Danh sách Chưa Giao</option>
+                <option>Danh sách đã giao</option>
+                <option>Danh Sách Sản Phẩm</option>
+              </select
+            </div>
+           <input type="submit" value="OKey">
+            </form>
+</div>
+<span class="label label-inverse">Danh Sách Chớ Duyệt</span>
+<div id="div1">
+<div class="span6">
+		<table class="table dispalyflex">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Tên Sản Phẩm </th>
+            <th>Số Lượng Bán </th>
+            <th>Giá</th>
+          </tr>
+        </thead>
+         {{#each arrayss}}
+        <tbody>
+          <tr>
+            <td> Name : {{this.Name}} </td>
+            <td> SL : {{this.amountproduct}}</td>
+            <td> Giá : {{this.priceproduct}}</td>
+          </tr>
+          <tr>
+           <td>Địa Chỉ : {{this.address}} </td>
+            <td>SDT :  {{this.phonenumber}} </td>
+            <td>người Mua : {{this.sell}}</td>
+            <td>Đến Trạng Đó </td>
+          </tr>
+          <tr>
+           <td>Tính Trạng : </td>
+           <td>Tiền Thuế  </td> 
+             <td>ID: {{this.ID}}</td>
+             <td><input type="button" value="Xóa" class="detele" id="{{this.id}}">
+   <input type="button" value="Duyệt" class="Check" id="{{this.id}}"></td>
+          </tr>
+        </tbody>
+          {{/each}}
+      </table>
+	</div>
+    </div>
+    <form action="/Browser" method="post" id="form">
+ <input type="text" class="name" name="id" value="">
+    </form>
+    <script>
+     var list = document.getElementsByClassName("detele");
+     for( i = 0 ; i < list.length ; i++) {
+       list[i].onclick = function() {
+         console.log(this)
+        var s =  this.getAttribute("id");
+        document.querySelector(".name").setAttribute("value" , s)
+         document.querySelector("#form").submit();
+       }
+     }
+      var Check = document.getElementsByClassName("Check");
+     for( i = 0 ; i < Check.length ; i++) {
+console.log(Check[i])
+       Check[i].onclick = function() {
+         var s = this.getAttribute("id")
+        document.querySelector("#form").setAttribute("action" , "/purchasecustomerscheck")
+         document.querySelector(".name").setAttribute("value" , s)
+         document.querySelector("#form").submit();
+       }
+     }
+     function submitcheck(s) {
+       console.log(s)
+          document.querySelector('.name').setAttribute("value" , s)
+      document.getElementById("form").submit();
+     }
+    </script>

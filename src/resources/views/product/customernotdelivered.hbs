@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hàng Đang Chớ Duyệt</title>
+<link rel="stylesheet" href="/css/Customersbrowse.css">
+   <style>
+     .productall {
+       display: flex;
+       flex-flow:wrap-reverse;
+     }
+   </style>
+</head>
+<body>
+    <div class="bar-breadcrumb">
+        <ul class="breadcrumb">
+        <li><a href="#">Home</a> <span class="divider">/</span></li>
+        <li><a href="#">product</a> <span class="divider">/</span></li>
+        <li class="active">Hàng Đang giao</li>
+      </ul>
+    </div>
+    <label class="control-label" for="multiSelect">Chọn Chức Năng </label>
+   <div class="controls">
+     <form action="/oncustomer" method="POST">
+              <div class="controls">
+              <select class="span9" id="select11" name="function">
+                  <option>Hàng Đang giao</option>
+                   <option class="pushproduct">Đang Chớ Bán Hàng Duyệt</option>
+                   <option>Kho Hàng</option>
+                <option>Hàng đã giao</option>
+              </select>
+            </div>
+           <input type="submit" value="OKey">
+            </form>
+</div>
+<div class="productall">
+      {{#each array}}
+    <div class="sanphamluu">
+        <div class="thumbnail">
+			<img src="{{this.avatarproduct}}" alt="Bootshop panasonoc New camera">
+			<div class="caption">
+			  <h5>{{this.nameproduct}}</h5>
+              <p>{{this.priceproduct}}</p>
+				<h4 style="text-align:center"><a class="btn" href="product_details.html"> Coi sản Phẩm <i class="icon-zoom-in"></i></a> <br>
+				<span class="label label-inverse">Trạng Thái : Đang giao Hàng </span> <br>
+                	<span class="label label-inverse">Ngày : 5 Ngày Nữa </span>
+            </div>
+		  </div>
+      </div>
+        {{/each}}
+        </div>
+    </div>
+    <script>
+      var  deletes = document.querySelectorAll(".delete")
+      console.log(deletes)
+         for(i = 0 ; i < deletes.length ; i ++ ){
+           console.log(deletes[i])
+           deletes[i].onclick = function() {
+             console.log(deletes)
+            var x =   deletes.getAttribute("id");
+           alert(x)
+           }
+         }
+    </script>
+</body>
+</html>

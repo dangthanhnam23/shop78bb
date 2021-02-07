@@ -1,0 +1,62 @@
+.avatarproduct {
+    height: 268px;
+    width: 360px;
+}
+.avatarproduct-i {
+    height: 160px;
+    width: 120px;
+}
+.cmtavatar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px -5px;
+    width: 100%;
+    text-align: left;
+}
+.cmtavatar-s {
+    flex-flow: wrap-reverse;
+}
+.cmtavatar-img {
+ width: 30%;
+}
+.cmtavatar img {
+    height: 50px;
+    width: 50px;
+}
+.cmtavatar p {
+    margin-left: 10px;
+    font-weight: 600;
+}
+.cmtavatar p  span {
+    font-weight: 100;
+}
+.input-xxlarge {
+    width: 100%;
+}
+.allcmt {
+    text-align: left; 
+    height: 600px;
+    overflow: scroll;
+}
+.display {
+    display: none;
+}
+.displayflex {
+    display: flex;
+}
+.cmtavatar-content {
+    text-align: left;
+}
+.tatcabinhluan {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: #ffffff;
+    height: 100%;
+    display: none;
+}
+input.displaynone {
+    display: none;
+}

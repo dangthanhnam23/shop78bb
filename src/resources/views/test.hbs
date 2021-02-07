@@ -1,0 +1,24 @@
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<form action="/ontest" method="post" class=".form">
+    <input name="username" type="text">
+    <input name="password" type="password">
+    <input value="Submit" type="submit">
+</form>
+ <script type="text/javascript">
+ $(document).ready(function() {
+    $('form').submit(function(event) {
+        $.ajax({
+            method: $(this).attr('method'),
+            url: $(this).attr('action'),
+            data: $(this).serialize(),
+            // other AJAX settings goes here
+            // ..
+        }).done(function(response) {
+          alert('hello')
+          console.log(response)
+            // Process the response here
+        });
+        event.preventDefault(); // <- avoid reloading
+   });
+});
+</script>

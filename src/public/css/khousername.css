@@ -1,0 +1,21 @@
+.bar a {
+    margin: 5px 2px;
+    color: #ffffff;
+}
+.thumbnail {
+    display: flex;
+    flex-wrap: wrap;
+}
+.avatarproduct {
+    width: 30%;
+}
+.contentproduct {
+    width: 70%;
+}
+.contentproduct li {
+    list-style-type: none   ;
+    margin-left: 10px;
+}
+#themesBtn , #secectionBox {
+    z-index: 1000;
+}

@@ -1,0 +1,99 @@
+.notification span {
+    padding-right: 5px ;
+}
+.dealproduct {
+  margin-left: 10px;
+}
+#secectionBox {
+    transition: 0.5s all;
+}
+#srchFld {
+    background: #ffffff;
+}
+.timeevent {
+    background: red;
+    height: 50px;
+   padding-left: 0px 10px;
+    width: 100%;
+    line-height: 50px;
+}
+.timeevent p {
+    color: #ffffff;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.thanhthongbao {
+    
+    display: none;
+    position: fixed;
+    height: 400px;
+    background: #ffffff;
+    width: 300px;
+    left: 45px;
+    top: 60px;  
+    z-index: 1000;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: .25rem;
+    box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,.1);
+}
+.toast  {
+   text-align: center;
+   width: 100%;
+}
+.toast-header h4 {
+    color: blue;
+}
+.toast-body {
+    font-size: 8px;
+    text-align: left;
+} 
+#loginclass {
+    display: none;
+}
+.doigiaodien {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #ffffff;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+.doigiaodien h4 {
+    text-align: center;
+}
+.doigiaodien p {
+    text-align: center;
+    margin-top: 10px;
+}
+.doigiaodien .font-a-giaodien {
+    color: red;
+    text-align: center;
+    width: 100%;
+}
+.btn-group {
+    margin: 10px 0px;
+}
+.slideproduct {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+.slideproduct-item  {
+    flex-shrink: 6;
+    flex-grow: 2;
+    flex-basis: 150px;
+    background-color:#dadada;
+    border: 1px solid #ffffff;
+}
+.menuproduct1  {
+ background-image: url(/images/anvat2.png);
+}
+.brand img {
+    height: 50px;
+    width: 50px;
+}

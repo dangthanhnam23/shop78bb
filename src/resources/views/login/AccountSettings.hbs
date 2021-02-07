@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="/css/AccountSettings.css">
+
+
+<div class="row-fluid">
+  <div class="span6">
+  <div class="well" style="padding: 8px 0;">
+        <ul class="nav nav-list">
+          <li class="nav-header">List header</li>
+          <li class="active"><a href="#"><i class="icon-white icon-home"></i> Home</a></li>
+          <li><a href="#"><i class="icon-book"></i> Hương dẫn </a></li>
+          <li><a href="login/upavatar"><i class="icon-pencil"></i>Đổi Avatar</a></li>
+          <li class="nav-header">Setting Usename</li>
+          <li><a href="/ID={{item.cookie}}" class="Username"><span><img src="{{item.avatar}}" alt="taikhoan" class="avtar"></span> Store :  {{item.Username}}</a></li>
+          <li><a href="/EtionAccount"><i class="icon-cog"></i> Cài Đặt Tài Khoản</a></li>
+                    <li><a href="/sellproduct"><i class="icon-cog"></i> Quản li sản phẩm</a></li>
+          <li class="divider"></li>
+           <li><a href="#"> Trạng Thái Quán</a></li>
+          <li><a  class="dangxuat"> Đăng Xuất</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class="span6">
+	  <h4>Trạng Thái Quán</h4><br>
+	  <ul class="nav nav-tabs nav-stacked">
+        <div class="control-group">
+            <label class="control-label" for="select01">Trang Thái Của Quán</label>
+            <div class="controls">
+              <select id="select01">
+                <option>on</option>
+                <option>off</option>
+              </select>
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="select01">Quán Cho Ship Về </label>
+            <div class="controls">
+              <select id="select01">
+                 <option>on </option>
+                <option>off</option>
+              </select>
+            </div>
+          </div>
+      </ul>
+	 </div>
+	 </div>
+   <form action="" class="form" method="post"></form>
+   <script>
+document.querySelector(".dangxuat").onclick =function() {
+  document.querySelector(".form").setAttribute("action" , "ondangxuat")
+  document.querySelector(".form").submit();
+}
+   </script>

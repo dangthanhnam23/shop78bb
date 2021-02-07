@@ -1,0 +1,30 @@
+.breadcrumb {
+    padding:  0px 10px;
+}
+.navbar-nav {
+    display: block;
+}
+.navbar-nav li {
+    list-style-type: none;
+    width: 100%;
+}
+#sections , .navbar {
+ margin-left: 10px;
+}
+.media  {
+    box-shadow: 0 2px 4px 0 rgba(158, 158, 158, 0), 0 2px 15px 0 rgba(0, 0, 0, 0.06);
+
+}
+.media-body , .rounded-circle {
+    margin-left: 10px;
+}
+.w100 {
+    width: 100%;
+    height: 50px;
+}
+.textcen {
+    text-align: center;
+}
+.thumbnail {
+    display: flex;
+}
